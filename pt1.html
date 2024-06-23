@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+   function f1(){
+    console.log("hello")
+   }
+    function main(){
+       f1()
+       f2()
+       const message = ()=>{console.log("this is my sencond")}
+       const msg1 = () =>{console.log("it is the first")}
+       setTimeout(message,5000);
+       setTimeout(msg1,3000);
+       setTimeout(function(){console.log("l am the last")},7000);
+    } 
+
+    function f2(){console.log("i am 2nd function")}
+   main()
+    </script>
+
+</body>
+</html>
